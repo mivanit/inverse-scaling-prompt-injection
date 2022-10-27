@@ -9,8 +9,7 @@ from pathlib import Path
 
 def mapping_fewshot(
 		initial_prompts: list[str],
-		example_Q_prefix: str,
-		example_A_prefix: str,
+		example_fmt: str,
 		correct_examples: list[tuple[str, str]],
 		prompt_injection_formats: list[str],
 		injected_answers: list[str],
@@ -23,10 +22,8 @@ def mapping_fewshot(
 	# Parameters:
 	 - `initial_prompts : list[str]`   
 	   initial (zero shot) prompt, can be blank
-	 - `example_Q_prefix : str`   
-	   example question prefix (can be blank, should have space at end if not)
-	 - `example_A_prefix : str`   
-	   example answer prefix (can be blank, should have space at end if not)
+	 - `example_fmt : str`
+	 	format string for the example. will get keys "ex_Q", "ex_A". {ex_A} should be the **LAST THING IN THE FORMAT STRING**, set it to "" if its the final part of the prompt
 	 - `correct_examples : list[tuple[str, str]]`   
 	   list of (question, answer) pairs
 	 - `prompt_injection_formats : list[str]`   
@@ -73,11 +70,16 @@ def mapping_fewshot(
 		# Generate the prompt, with a random initial prompt
 		prompt: list[str] = [random.choice(initial_prompts)]
 		for example_Q, example_A in examples_subset:
-			prompt.append(f"{example_Q_prefix}{example_Q}\n{example_A_prefix}{example_A}")
+			prompt.append(example_fmt.format(ex_Q=example_Q, ex_A=example_A))
 
 		# add the injection to the prompt with fake answer
-		injected: str = prompt_inj_fmt.format(ex_Q=final_example[0], ex_A=final_example[1], injected_A=injected_answer)
-		prompt.append(f"{example_Q_prefix}{injected}\n{example_A_prefix}")
+		injected: str = prompt_inj_fmt.format(
+			ex_Q=final_example[0], 
+			ex_A=final_example[1], 
+			injected_A=injected_answer,
+		)
+		# prompt.append(f"{example_Q_prefix}{injected}\n{example_A_prefix}")
+		prompt.append(example_fmt.format(ex_Q=injected, ex_A=""))
 
 		if mode == "sequence_prob":
 			output.append(dict(
@@ -138,9 +140,9 @@ def mapping_gen_from_file(
 
 	# store data
 	if output_filename is None:
-		output_filename = f"data/{Path(gen_filename).stem}_{mode}.jsonl"
+		output_filename = f"data/{Path(gen_filename).stem}-{mode}.jsonl"
 
-	print(f"saving to: {output_filename}")
+	print(f"saving to: '{output_filename}'")
 
 	with open(output_filename, "w", encoding="utf-8") as f:
 		for d in data:
@@ -148,7 +150,6 @@ def mapping_gen_from_file(
 
 
 mapping_gen_from_file.__doc__ += mapping_fewshot.__doc__
-
 
 if __name__ == "__main__":
 	import sys
