@@ -16,7 +16,7 @@ from typing import Optional, Union
 class APIParameters:
 	temperature: float = 0.0
 	n: int = 1
-	max_tokens: int = 1
+	max_tokens: int = 5
 	top_p: float = 1.0
 	logprobs: Optional[int] = 100
 	stop: Optional[list[str]] = None
@@ -100,7 +100,8 @@ def main(
 		}
 		for model_name in model_names:
 			response = call_api(prompt["prompt"], model_name)
-			temp["completions"][model_name] = response.json()["choices"].pop()["logprobs"]["top_logprobs"].pop()
+			temp["completions"][model_name] = response.json()["choices"].pop()["text"]
+			# ["choices"].pop()["logprobs"]["top_logprobs"].pop()
 
 		output.append(temp)
 

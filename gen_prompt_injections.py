@@ -46,6 +46,8 @@ def mapping_fewshot(
 			"classes" : list[str]
 			"answer_index" : int
 	"""	
+	# prepend " " to all correct examples
+	correct_examples = [(f" {q}", f" {a}") for q, a in correct_examples]
 
 	output: list[dict[str, str]] = list()
 
@@ -67,6 +69,8 @@ def mapping_fewshot(
 			# pick a different answer
 			injected_answer = random.choice(injected_answers)
 
+		injected_answer = f" {injected_answer}"
+
 		# Generate the prompt, with a random initial prompt
 		prompt: list[str] = [random.choice(initial_prompts)]
 		for example_Q, example_A in examples_subset:
@@ -84,12 +88,12 @@ def mapping_fewshot(
 		if mode == "sequence_prob":
 			output.append(dict(
 				prompt = "\n".join(prompt),
-				completion = " " + final_example[1],
+				completion = final_example[1],
 			))
 		elif mode == "classification":
 			output.append(dict(
 				prompt = "\n".join(prompt),
-				classes = [" " + final_example[1], " " + injected_answer],
+				classes = [final_example[1], injected_answer],
 				answer_index = 0,
 			))
 		else:
