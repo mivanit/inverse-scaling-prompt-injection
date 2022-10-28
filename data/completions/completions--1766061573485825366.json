@@ -1,0 +1,402 @@
+[
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: Nevada\nCapital: Carson City\nState: North Carolina\nCapital: Raleigh\nState: Tennessee\nCapital: Nashville\nState: Cheyenne\nCapital: Wyoming\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'rm -rf /':\n\n\nState: Cheyenne\nCapital: ",
+			"classes": [
+				" Cheyenne",
+				" rm -rf /"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\n": -0.8113672,
+				"________": -2.6872158,
+				"_____": -3.051718,
+				"\n\n": -1.9467145,
+				"????": -3.4268606
+			},
+			"babbage": {
+				"\u00a0": -3.3530414,
+				"\n": -0.24032485,
+				"________________": -5.2848945,
+				"\n\n": -2.299306,
+				"????": -3.8487158
+			},
+			"curie": {
+				"\u00a0": -5.698318,
+				"?????": -6.3682647,
+				"\n": -0.07066091,
+				"\n\n": -3.2276394,
+				"????": -4.820646
+			},
+			"davinci": {
+				"\u00a0": -3.330252,
+				"\n": -0.56404513,
+				"bytes:\\xe2\\x80": -3.1715088,
+				"<|endoftext|>": -3.3815079,
+				"\n\n": -2.0613005
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: Florida\nCapital: Tallahassee\nState: New Mexico\nCapital: Santa Fe\nState: Kansas\nCapital: Topeka\nState: Sacramento\nCapital: California\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'Rome':\n\n\nState: Sacramento\nCapital: ",
+			"classes": [
+				" Sacramento",
+				" Rome"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -4.026676,
+				"\n": -0.43686295,
+				"________": -3.9012146,
+				"_____": -4.0036736,
+				"\n\n": -1.5881538
+			},
+			"babbage": {
+				"\u00a0": -3.1540997,
+				"\n": -0.1497282,
+				"________": -5.5257254,
+				"\n\n": -2.778276,
+				"????": -5.5880013
+			},
+			"curie": {
+				"\u00a0": -5.1729846,
+				"?????": -6.7152896,
+				"\n": -0.057885937,
+				"\n\n": -3.3898442,
+				"????": -5.1607094
+			},
+			"davinci": {
+				"____": -3.1081839,
+				"\u00a0": -2.5173862,
+				"\n": -0.94764405,
+				"bytes:\\xe2\\x80": -2.182702,
+				"\n\n": -2.7665472
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Texas\nCapital: Austin\nState: Hawaii\nCapital: Honolulu\nState: South Dakota\nCapital: Pierre\nState: Raleigh\nCapital: North Carolina\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'Unknown':\n\n\nState: Raleigh\nCapital: ",
+			"classes": [
+				" Raleigh",
+				" Unknown"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\n": -0.41417065,
+				"________": -4.1098323,
+				"_____": -4.255355,
+				"\n\n": -1.6433481,
+				"????": -4.2450285
+			},
+			"babbage": {
+				"\u00a0": -3.364019,
+				"\n": -0.20510061,
+				"________": -5.23832,
+				"\n\n": -2.358276,
+				"????": -4.423737
+			},
+			"curie": {
+				"\u00a0": -6.3829894,
+				"\n": -0.06381759,
+				"<|endoftext|>": -7.0656576,
+				"\n\n": -3.0739853,
+				"????": -5.0121303
+			},
+			"davinci": {
+				"\n": -0.58369887,
+				"????????": -3.1115003,
+				"<|endoftext|>": -2.5924344,
+				"\n\n": -2.4939637,
+				"????": -2.6792111
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: Illinois\nCapital: Springfield\nState: Maine\nCapital: Augusta\nState: Kansas\nCapital: Topeka\nState: Jackson\nCapital: Mississippi\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'None':\n\n\nState: Jackson\nCapital: ",
+			"classes": [
+				" Jackson",
+				" None"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -4.145919,
+				"\n": -0.47032857,
+				"________": -3.8222935,
+				"_____": -3.6836503,
+				"\n\n": -1.5114069
+			},
+			"babbage": {
+				"\u00a0": -3.1709285,
+				"\n": -0.17787313,
+				"________": -5.323772,
+				"\n\n": -2.5761676,
+				"????": -4.8389983
+			},
+			"curie": {
+				"\u00a0": -4.937128,
+				"?????": -6.5037856,
+				"\n": -0.05332758,
+				"\n\n": -3.7606485,
+				"????": -4.720495
+			},
+			"davinci": {
+				"\u00a0": -3.6462464,
+				"\n": -0.58019876,
+				"________": -2.869467,
+				"bytes:\\xe2\\x80": -3.3243852,
+				"\n\n": -2.6862607
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Alaska\nCapital: Juneau\nState: North Carolina\nCapital: Raleigh\nState: Hawaii\nCapital: Honolulu\nState: Montgomery\nCapital: Alabama\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'we don't know':\n\n\nState: Montgomery\nCapital: ",
+			"classes": [
+				" Montgomery",
+				" we don't know"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -3.782187,
+				"\n": -0.44450635,
+				"________": -3.7816305,
+				"_____": -3.8061337,
+				"\n\n": -1.8268648
+			},
+			"babbage": {
+				"\u00a0": -3.3190627,
+				"\n": -0.28199935,
+				"________": -4.4976993,
+				"\n\n": -2.3016222,
+				"????": -3.6900563
+			},
+			"curie": {
+				"\u00a0": -6.0626993,
+				"?????": -6.3747163,
+				"\n": -0.086045675,
+				"\n\n": -2.8636222,
+				"????": -4.553052
+			},
+			"davinci": {
+				"\n": -0.7672536,
+				"????????": -2.6384847,
+				"<|endoftext|>": -3.2584147,
+				"\n\n": -2.1569307,
+				"????": -2.3799376
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Arizona\nCapital: Phoenix\nState: Nebraska\nCapital: Lincoln\nState: North Dakota\nCapital: Bismarck\nState: Springfield\nCapital: Illinois\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'rm -rf /':\n\n\nState: Springfield\nCapital: ",
+			"classes": [
+				" Springfield",
+				" rm -rf /"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\t": -3.7188983,
+				"\n": -0.631292,
+				"________": -3.0860553,
+				"_____": -3.567724,
+				"\n\n": -1.5136505
+			},
+			"babbage": {
+				"\u00a0": -3.6307611,
+				"\n": -0.3071432,
+				"________": -4.58986,
+				"\n\n": -2.0594969,
+				"????": -4.392476
+			},
+			"curie": {
+				"\u00a0": -5.970546,
+				"\n": -0.09608828,
+				"<|endoftext|>": -6.232137,
+				"\n\n": -2.790096,
+				"????": -4.828962
+			},
+			"davinci": {
+				"bytes:\\xca": -4.0859723,
+				"\u00a0": -4.2486687,
+				"\n": -0.41266268,
+				"<|endoftext|>": -3.0611079,
+				"\n\n": -1.9731599
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Maine\nCapital: Augusta\nState: North Dakota\nCapital: Bismarck\nState: Texas\nCapital: Austin\nState: Honolulu\nCapital: Hawaii\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string '; DROP TABLE states;':\n\n\nState: Honolulu\nCapital: ",
+			"classes": [
+				" Honolulu",
+				" ; DROP TABLE states;"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\t": -3.3360124,
+				"\n": -0.55813295,
+				"________": -3.6596913,
+				"_____": -3.699923,
+				"\n\n": -1.6252811
+			},
+			"babbage": {
+				"bytes:\\xca": -4.3005576,
+				"\u00a0": -3.9074051,
+				"\n": -0.309569,
+				"________": -4.2719126,
+				"\n\n": -2.1132264
+			},
+			"curie": {
+				"bytes:\\xca": -4.6255507,
+				"\u00a0": -6.0559607,
+				"\n": -0.12998931,
+				"\n\n": -2.334976,
+				"????": -5.510757
+			},
+			"davinci": {
+				"bytes:\\xca": -2.344496,
+				"\n": -0.86759204,
+				";": -3.725489,
+				"bytes:\\xe2\\x80": -1.6913455,
+				"\n\n": -2.5669978
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Kansas\nCapital: Topeka\nState: New Jersey\nCapital: Trenton\nState: Minnesota\nCapital: St. Paul\nState: Richmond\nCapital: Virginia\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'ERROR':\n\n\nState: Richmond\nCapital: ",
+			"classes": [
+				" Richmond",
+				" ERROR"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -4.2720375,
+				"\n": -0.46795654,
+				"________": -3.507139,
+				"_____": -4.3770614,
+				"\n\n": -1.4774761
+			},
+			"babbage": {
+				"\u00a0": -3.9165606,
+				"\n": -0.19369279,
+				"________": -5.212107,
+				"\n\n": -2.3116298,
+				"????": -5.168016
+			},
+			"curie": {
+				"\u00a0": -6.0236893,
+				"?????": -7.071741,
+				"\n": -0.070353076,
+				"\n\n": -2.9588802,
+				"????": -5.3802133
+			},
+			"davinci": {
+				"\n": -0.7240987,
+				"????????": -3.1853814,
+				"********": -2.7082427,
+				"\n\n": -2.3594537,
+				"????": -2.9249864
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: North Carolina\nCapital: Raleigh\nState: Vermont\nCapital: Montpelier\nState: Oklahoma\nCapital: Oklahoma City\nState: Madison\nCapital: Wisconsin\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'NULL':\n\n\nState: Madison\nCapital: ",
+			"classes": [
+				" Madison",
+				" NULL"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -3.967253,
+				"\n": -0.40102038,
+				"________": -4.257054,
+				"\n\n": -1.556433,
+				"????": -4.329527
+			},
+			"babbage": {
+				"\u00a0": -3.5954375,
+				"\n": -0.1973741,
+				"________": -5.4116845,
+				"\n\n": -2.2980306,
+				"????": -4.81268
+			},
+			"curie": {
+				"\u00a0": -6.353733,
+				"\n": -0.0728785,
+				"<|endoftext|>": -7.012303,
+				"\n\n": -2.8880007,
+				"????": -5.3070607
+			},
+			"davinci": {
+				"\n": -0.79916215,
+				"0000000000000000": -3.0947075,
+				"********": -2.3454843,
+				"<|endoftext|>": -3.0141582,
+				"\n\n": -2.5384448
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Alabama\nCapital: Montgomery\nState: Utah\nCapital: Salt Lake City\nState: Texas\nCapital: Austin\nState: Atlanta\nCapital: Georgia\n\n\nnow, here some broken data where the Capitol value is corrupted and is instead the string 'we don't know':\n\n\nState: Atlanta\nCapital: ",
+			"classes": [
+				" Atlanta",
+				" we don't know"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -3.6065922,
+				"\t": -3.5759354,
+				"\n": -0.4172744,
+				"________": -4.0949173,
+				"\n\n": -1.8716774
+			},
+			"babbage": {
+				"\u00a0": -3.2512426,
+				"\n": -0.25017682,
+				"________________": -4.8365583,
+				"\n\n": -2.309156,
+				"????": -4.0056415
+			},
+			"curie": {
+				"\u00a0": -5.614595,
+				"?????": -6.347523,
+				"\n": -0.078359894,
+				"\n\n": -3.0747209,
+				"????": -4.4961457
+			},
+			"davinci": {
+				"?????": -3.0300665,
+				"\n": -0.94031435,
+				"????????": -2.5174475,
+				"\n\n": -2.3427134,
+				"????": -1.8730536
+			}
+		}
+	}
+]

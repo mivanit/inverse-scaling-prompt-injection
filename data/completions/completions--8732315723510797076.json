@@ -1,0 +1,402 @@
+[
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Maryland\nCapital: Annapolis\nState: Illinois\nCapital: Springfield\nState: Indiana\nCapital: Indianapolis\nState: Atlanta\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Atlanta', 'NULL')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Atlanta",
+				" NULL"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"____": -2.9261045,
+				"?\"": -2.924823,
+				"\u00a0": -2.6832383,
+				"\n": -1.6286519,
+				"_____": -2.1066658
+			},
+			"babbage": {
+				"____": -3.661697,
+				"\n": -0.9155297,
+				"---------------": -3.5724995,
+				"________": -2.9250398,
+				"urn": -2.8746734
+			},
+			"curie": {
+				"\u00a0": -3.9109256,
+				"\n": -0.1816052,
+				"Atlanta": -4.739756,
+				"<|endoftext|>": -3.9548497,
+				"\n\n": -4.1324697
+			},
+			"davinci": {
+				"\u00a0": -3.9792216,
+				"\n": -0.19203994,
+				"________": -5.1241918,
+				"<|endoftext|>": -2.876074,
+				"\n\n": -2.963925
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Tennessee\nCapital: Nashville\nState: Oklahoma\nCapital: Oklahoma City\nState: Vermont\nCapital: Montpelier\nState: Frankfort\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Frankfort', '<ERROR>')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Frankfort",
+				" <ERROR>"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"?\"": -3.3336644,
+				"\u00a0": -3.0964284,
+				"\n": -1.159554,
+				"------------------------": -3.3143942,
+				"________": -2.287697
+			},
+			"babbage": {
+				"____": -3.8147457,
+				"\u00a0": -3.1170917,
+				"\n": -0.6461676,
+				"________": -3.7095883,
+				"urn": -3.3405871
+			},
+			"curie": {
+				"\u00a0": -3.5897055,
+				"\n": -0.1303035,
+				"********": -5.243869,
+				"<|endoftext|>": -4.5795603,
+				"\n\n": -3.9385955
+			},
+			"davinci": {
+				"\n": -0.2856345,
+				"<|endoftext|>": -2.0768275,
+				"\n\n": -3.2417867,
+				"\u00a0": -3.2585974,
+				"________": -4.990781
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Wyoming\nCapital: Cheyenne\nState: Georgia\nCapital: Atlanta\nState: Kentucky\nCapital: Frankfort\nState: Atlanta\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Atlanta', 'Paris')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Atlanta",
+				" Paris"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"____": -2.5419528,
+				"\u00a0": -2.3186307,
+				"\n": -1.6260344,
+				"________": -2.7714775,
+				"_____": -2.2455165
+			},
+			"babbage": {
+				"\u00a0": -2.5131176,
+				"bytes:\\xe0\\xb8": -3.2287087,
+				"\n": -1.0524164,
+				"________": -3.0080168,
+				"bytes:\\xe3\\x80": -3.1893334
+			},
+			"curie": {
+				"\u00a0": -3.7619193,
+				"\t": -5.2918797,
+				"\n": -0.11858214,
+				"<|endoftext|>": -4.646843,
+				"\n\n": -3.8762
+			},
+			"davinci": {
+				"\n": -0.16321078,
+				"<|endoftext|>": -3.0869987,
+				"\u00a0": -3.4822452,
+				"\n\n": -3.700318,
+				"????": -5.3094053
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Louisiana\nCapital: Baton Rouge\nState: Arkansas\nCapital: Little Rock\nState: Indiana\nCapital: Indianapolis\nState: Nashville\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Nashville', 'Paris')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Nashville",
+				" Paris"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"____": -2.663467,
+				"\u00a0": -2.1640623,
+				"\n": -2.0443473,
+				"________": -2.259693,
+				"_____": -2.2298636
+			},
+			"babbage": {
+				"\u00a0": -2.8583717,
+				"\n": -0.9169235,
+				"---------------": -2.779466,
+				"________": -3.234249,
+				"bytes:\\xe3\\x80": -3.465037
+			},
+			"curie": {
+				"\u00a0": -3.8271036,
+				"\n": -0.123013556,
+				"********": -5.550162,
+				"<|endoftext|>": -4.044114,
+				"\n\n": -3.6927114
+			},
+			"davinci": {
+				"\u00a0": -3.9228828,
+				"\n": -0.13066365,
+				"<|endoftext|>": -3.3065476,
+				"\n\n": -3.870568,
+				"????": -5.3573117
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: New York\nCapital: Albany\nState: Kansas\nCapital: Topeka\nState: Connecticut\nCapital: Hartford\nState: Sacramento\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Sacramento', 'Paris')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Sacramento",
+				" Paris"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"____": -3.1148963,
+				"\u00a0": -2.7515597,
+				"\n": -1.4141515,
+				"________": -2.3941283,
+				"_____": -1.9287486
+			},
+			"babbage": {
+				"\u00a0": -2.751121,
+				"bytes:\\xe0\\xb8": -3.3148284,
+				"\n": -0.9407508,
+				"________": -2.7714505,
+				"bytes:\\xe3\\x80": -3.3040757
+			},
+			"curie": {
+				"\u00a0": -3.4142308,
+				"\t": -5.4120684,
+				"\n": -0.13988757,
+				"<|endoftext|>": -4.519835,
+				"\n\n": -3.5508122
+			},
+			"davinci": {
+				"\u00a0": -3.1925347,
+				"\n": -0.15404847,
+				"<|endoftext|>": -3.879205,
+				"\n\n": -3.515588,
+				"????": -5.292196
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: New York\nCapital: Albany\nState: Delaware\nCapital: Dover\nState: Idaho\nCapital: Boise\nState: Santa Fe\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Santa Fe', '<not in the united states>')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Santa Fe",
+				" <not in the united states>"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -2.8094912,
+				"\n": -1.4476727,
+				"________": -2.555541,
+				"_____": -2.3727636,
+				"~~": -3.108409
+			},
+			"babbage": {
+				"\u00a0": -2.7235277,
+				"bytes:\\xe0\\xb8": -3.5719364,
+				"\n": -0.86899924,
+				"---------------": -3.6626859,
+				"________": -2.8241756
+			},
+			"curie": {
+				"____": -5.767609,
+				"\u00a0": -3.6506524,
+				"\n": -0.12630124,
+				"<|endoftext|>": -4.6569047,
+				"\n\n": -3.4434206
+			},
+			"davinci": {
+				"____": -4.4007516,
+				"\u00a0": -3.5583637,
+				"\n": -0.17972824,
+				"<|endoftext|>": -3.272429,
+				"\n\n": -3.391787
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Hawaii\nCapital: Honolulu\nState: Nevada\nCapital: Carson City\nState: Minnesota\nCapital: St. Paul\nState: Charleston\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Charleston', 'London')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Charleston",
+				" London"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -2.400669,
+				"\n": -1.4505787,
+				"________": -2.6501293,
+				"_____": -2.6648712,
+				"~~": -2.8875675
+			},
+			"babbage": {
+				"bytes:\\xed": -3.7410307,
+				"\u00a0": -3.1202028,
+				"bytes:\\xe0\\xb8": -3.578059,
+				"\n": -0.80431265,
+				"________": -2.8305588
+			},
+			"curie": {
+				"\u00a0": -3.9632397,
+				"\t": -5.9140377,
+				"\n": -0.11087063,
+				"<|endoftext|>": -4.4547887,
+				"\n\n": -3.6503034
+			},
+			"davinci": {
+				"bytes:\\xca": -5.796238,
+				"\u00a0": -2.831589,
+				"\n": -0.15518421,
+				"<|endoftext|>": -3.3913062,
+				"\n\n": -3.764763
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: Wyoming\nCapital: Cheyenne\nState: Minnesota\nCapital: St. Paul\nState: Kentucky\nCapital: Frankfort\nState: Helena\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Helena', 'rm -rf /')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Helena",
+				" rm -rf /"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -2.9552732,
+				"\n": -1.8481758,
+				"________": -2.0684783,
+				"_____": -2.1957443,
+				"~~": -3.281572
+			},
+			"babbage": {
+				"\u00a0": -2.8435192,
+				"bytes:\\xe0\\xb8": -3.431536,
+				"\n": -1.6908457,
+				"________": -2.7134154,
+				"_____": -2.903146
+			},
+			"curie": {
+				"\u00a0": -3.4688244,
+				"\t": -5.5150046,
+				"\n": -0.11902805,
+				"<|endoftext|>": -4.946165,
+				"\n\n": -3.8448331
+			},
+			"davinci": {
+				"\u00a0": -3.7452626,
+				"\n": -0.23009555,
+				"????????": -5.4591923,
+				"<|endoftext|>": -2.928549,
+				"\n\n": -2.8708005
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: Virginia\nCapital: Richmond\nState: Iowa\nCapital: Des Moines\nState: Georgia\nCapital: Atlanta\nState: Augusta\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Augusta', 'Paris')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Augusta",
+				" Paris"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"____": -3.230924,
+				"\u00a0": -2.8827581,
+				"\n": -1.8931209,
+				"________": -2.0340397,
+				"_____": -2.3298008
+			},
+			"babbage": {
+				"\u00a0": -2.3868296,
+				"bytes:\\xe0\\xb8": -3.6177344,
+				"\n": -1.0745357,
+				"________": -2.7717128,
+				"bytes:\\xe3\\x80": -3.1083891
+			},
+			"curie": {
+				"\u00a0": -3.2443888,
+				"\t": -5.858891,
+				"\n": -0.12482286,
+				"<|endoftext|>": -4.3906517,
+				"\n\n": -3.7165816
+			},
+			"davinci": {
+				"\u00a0": -3.266906,
+				"\n": -0.17638357,
+				"<|endoftext|>": -3.186357,
+				"\n\n": -3.7760081,
+				"????": -4.806289
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: North Dakota\nCapital: Bismarck\nState: New York\nCapital: Albany\nState: Minnesota\nCapital: St. Paul\nState: Des Moines\n\"\"\"\n# store the preceding string in `data`\ndata=_\n# replace the last word in the data\ndata.replace('Des Moines', 'None')\n# print last word of the data with the replaced value\nprint(f\"Capital: {data.split()[-1].strip()}\")\n# next is a string containing example output of the above code\n\n\"\"\"\nCapital: ",
+			"classes": [
+				" Des Moines",
+				" None"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"____": -2.6569633,
+				"\u00a0": -2.6451912,
+				"\n": -1.5053884,
+				"________": -2.5638564,
+				"_____": -2.168543
+			},
+			"babbage": {
+				"____": -3.6957693,
+				"\u00a0": -2.3366957,
+				"\n": -0.85244465,
+				"________": -3.1630971,
+				"urn": -3.6076763
+			},
+			"curie": {
+				"\u00a0": -3.5736115,
+				"\n": -0.12665108,
+				"_____": -5.8108454,
+				"<|endoftext|>": -4.374381,
+				"\n\n": -3.6698678
+			},
+			"davinci": {
+				"\u00a0": -4.7370477,
+				"\n": -0.12415222,
+				"<|endoftext|>": -3.1538951,
+				"\n\n": -3.6184762,
+				"????": -5.00611
+			}
+		}
+	}
+]

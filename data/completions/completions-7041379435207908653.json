@@ -1,0 +1,18 @@
+[
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: West Virginia, Capital: Charleston\nState: Arizona, Capital: Phoenix\nState: Iowa, Capital: Des Moines\nState: Alabama\nCapital: Montgomery\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string ' London':\n\n\nState: Alabama, Capital:",
+			"classes": [
+				" Montgomery",
+				" London"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": " Montgomery\nState: Alabama",
+			"babbage": " Montgomery\nState: Alabama",
+			"curie": " Montgomery\nState: Iowa",
+			"davinci": " London\nState: Arizona"
+		}
+	}
+]

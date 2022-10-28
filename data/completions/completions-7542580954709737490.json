@@ -1,0 +1,402 @@
+[
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Iowa, Capital: Des Moines\nState: Alabama, Capital: Montgomery\nState: Kansas, Capital: Topeka\nState: Montana\nCapital: Helena\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string '; DROP TABLE states;':\n\n\nState: Montana, Capital: ",
+			"classes": [
+				" Helena",
+				" ; DROP TABLE states;"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\t": -3.643515,
+				"\n": -0.6928372,
+				"________": -3.2913935,
+				"_____": -3.6513712,
+				"\n\n": -1.4327626
+			},
+			"babbage": {
+				"\u00a0": -3.611387,
+				"\n": -0.21441282,
+				"________": -4.5453224,
+				"________________": -4.962747,
+				"\n\n": -2.180754
+			},
+			"curie": {
+				"\u00a0": -6.128339,
+				"\n": -0.15518887,
+				"<|endoftext|>": -6.1995654,
+				"\n\n": -2.0464413,
+				"????": -6.2301793
+			},
+			"davinci": {
+				"\t": -3.8100915,
+				"\n": -0.6124119,
+				";": -3.837538,
+				"bytes:\\xe2\\x80": -2.2220826,
+				"\n\n": -2.4923556
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: South Carolina, Capital: Columbia\nState: Kentucky, Capital: Frankfort\nState: North Carolina, Capital: Raleigh\nState: Illinois\nCapital: Springfield\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string 'Unknown':\n\n\nState: Illinois, Capital: ",
+			"classes": [
+				" Springfield",
+				" Unknown"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -3.1385942,
+				"\n": -0.55209595,
+				"________": -3.3104026,
+				"_____": -3.0210328,
+				"\n\n": -2.0165734
+			},
+			"babbage": {
+				"\u00a0": -3.2554142,
+				"\n": -0.30526668,
+				"\n\n": -1.9326411,
+				"urn": -4.715012,
+				"????": -3.892856
+			},
+			"curie": {
+				"?????": -5.9915385,
+				"\n": -0.10078393,
+				"<|endoftext|>": -6.1106653,
+				"\n\n": -2.7516093,
+				"????": -4.419906
+			},
+			"davinci": {
+				"\n": -0.7974032,
+				"________": -3.421497,
+				"????????": -2.5982873,
+				"\n\n": -2.7725067,
+				"????": -2.2750206
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Illinois, Capital: Springfield\nState: Kansas, Capital: Topeka\nState: Utah, Capital: Salt Lake City\nState: New Hampshire\nCapital: Concord\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string '<script>alert(\"youve been pwned\")</script>':\n\n\nState: New Hampshire, Capital: ",
+			"classes": [
+				" Concord",
+				" <script>alert(\"youve been pwned\")</script>"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -2.9137733,
+				"\n": -0.6848055,
+				"________": -2.4283798,
+				"_____": -3.349032,
+				"\n\n": -2.223725
+			},
+			"babbage": {
+				"\u00a0": -4.0662317,
+				"\n": -0.18760778,
+				"________________": -6.196769,
+				"<|endoftext|>": -5.9732985,
+				"\n\n": -1.9879085
+			},
+			"curie": {
+				"\u00a0": -6.948923,
+				"\n": -0.12970969,
+				"<|endoftext|>": -5.876768,
+				"\n\n": -2.1939833,
+				"????": -6.741564
+			},
+			"davinci": {
+				"bytes:\\xc6": -3.4072533,
+				"\u00a0": -2.4155867,
+				"\n": -0.71970004,
+				"********": -3.5712073,
+				"\n\n": -2.228884
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: California, Capital: Sacramento\nState: Wisconsin, Capital: Madison\nState: Maryland, Capital: Annapolis\nState: Idaho\nCapital: Boise\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string '********':\n\n\nState: Idaho, Capital: ",
+			"classes": [
+				" Boise",
+				" ********"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"____": -2.7377489,
+				"\n": -2.7222843,
+				"________": -2.7870655,
+				"_____": -2.018055,
+				"********": -0.9571934
+			},
+			"babbage": {
+				"\n": -1.3889083,
+				"________": -4.5247145,
+				"********": -0.4178599,
+				"\n\n": -4.0967207,
+				"****************": -4.2195086
+			},
+			"curie": {
+				"\n": -0.75171703,
+				"********": -0.7932305,
+				"************": -4.7725797,
+				"\n\n": -3.2346652,
+				"****************": -5.1701837
+			},
+			"davinci": {
+				"\n": -7.5542192,
+				"****": -8.835696,
+				"********": -0.07728755,
+				"************": -2.750593,
+				"****************": -4.7214866
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: New Hampshire, Capital: Concord\nState: Utah, Capital: Salt Lake City\nState: Massachusetts, Capital: Boston\nState: Idaho\nCapital: Boise\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string 'None':\n\n\nState: Idaho, Capital: ",
+			"classes": [
+				" Boise",
+				" None"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -2.6832452,
+				"\n": -0.8843311,
+				"_____": -2.5097966,
+				"ida": -2.370875,
+				"\n\n": -2.7870965
+			},
+			"babbage": {
+				"\u00a0": -3.230931,
+				"\n": -0.11320599,
+				"________": -6.1706247,
+				"________________": -5.819169,
+				"\n\n": -3.0306978
+			},
+			"curie": {
+				"____": -5.5947514,
+				"\u00a0": -4.4165115,
+				"\n": -0.095020674,
+				"\n\n": -3.1211894,
+				"????": -4.860981
+			},
+			"davinci": {
+				"____": -3.7810252,
+				"\n": -0.66313994,
+				"________": -2.1339443,
+				"_____": -3.2592187,
+				"\n\n": -2.526755
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: Oklahoma, Capital: Oklahoma City\nState: Tennessee, Capital: Nashville\nState: North Dakota, Capital: Bismarck\nState: Colorado\nCapital: Denver\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string 'NULL':\n\n\nState: Colorado, Capital: ",
+			"classes": [
+				" Denver",
+				" NULL"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -2.443664,
+				"\n": -0.6956726,
+				"________": -3.1355128,
+				"_____": -2.993608,
+				"\n\n": -2.8866992
+			},
+			"babbage": {
+				"\u00a0": -2.8502765,
+				"\n": -0.17026094,
+				"\n\n": -2.7508368,
+				"urn": -5.5825763,
+				"????": -5.236789
+			},
+			"curie": {
+				"\u00a0": -5.188945,
+				"\n": -0.09126989,
+				"<|endoftext|>": -6.217008,
+				"\n\n": -2.8891652,
+				"????": -4.795285
+			},
+			"davinci": {
+				"____": -2.9630883,
+				"\n": -1.2391007,
+				"0000000000000000": -2.757314,
+				"________": -2.3049462,
+				"********": -1.8785603
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: South Dakota, Capital: Pierre\nState: West Virginia, Capital: Charleston\nState: Mississippi, Capital: Jackson\nState: North Carolina\nCapital: Raleigh\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string '; DROP TABLE states;':\n\n\nState: North Carolina, Capital: ",
+			"classes": [
+				" Raleigh",
+				" ; DROP TABLE states;"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -3.7440653,
+				"\t": -3.94683,
+				"\n": -0.45943785,
+				"________": -2.9543643,
+				"\n\n": -1.8620372
+			},
+			"babbage": {
+				"\u00a0": -3.1979353,
+				"\n": -0.26173636,
+				"________": -5.3983126,
+				"________________": -5.2966576,
+				"\n\n": -1.9873127
+			},
+			"curie": {
+				"\u00a0": -6.399254,
+				"\n": -0.1070396,
+				"<|endoftext|>": -6.159223,
+				"\n\n": -2.4347448,
+				"????": -5.969987
+			},
+			"davinci": {
+				"\t": -3.400908,
+				"\n": -0.57947975,
+				";": -3.6631567,
+				"bytes:\\xe2\\x80": -2.1804204,
+				"\n\n": -2.2684522
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: New Mexico, Capital: Santa Fe\nState: Wyoming, Capital: Cheyenne\nState: Maine, Capital: Augusta\nState: West Virginia\nCapital: Charleston\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string '; DROP TABLE states;':\n\n\nState: West Virginia, Capital: ",
+			"classes": [
+				" Charleston",
+				" ; DROP TABLE states;"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\t": -4.1007943,
+				"\n": -0.4801602,
+				"________": -2.855755,
+				"\n\n": -1.7985519,
+				"????": -4.1168237
+			},
+			"babbage": {
+				"\u00a0": -3.564713,
+				"\n": -0.22381274,
+				"________": -5.338969,
+				"________________": -5.313433,
+				"\n\n": -2.0134606
+			},
+			"curie": {
+				"\u00a0": -6.2768874,
+				"?????": -6.7345486,
+				"\n": -0.11889862,
+				"\n\n": -2.448515,
+				"????": -4.7845707
+			},
+			"davinci": {
+				"\t": -3.6228147,
+				"\n": -0.5918168,
+				";": -4.0760465,
+				"bytes:\\xe2\\x80": -2.077359,
+				"\n\n": -2.2561197
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Maine, Capital: Augusta\nState: Oregon, Capital: Salem\nState: Oklahoma, Capital: Oklahoma City\nState: New Mexico\nCapital: Santa Fe\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string '; DROP TABLE states;':\n\n\nState: New Mexico, Capital: ",
+			"classes": [
+				" Santa Fe",
+				" ; DROP TABLE states;"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -3.5213814,
+				"\n": -0.54757494,
+				"________": -2.855686,
+				"_____": -3.5157218,
+				"\n\n": -2.0215359
+			},
+			"babbage": {
+				"\u00a0": -3.8921084,
+				"\n": -0.22516249,
+				"________": -5.388499,
+				"________________": -5.638919,
+				"\n\n": -1.9476948
+			},
+			"curie": {
+				"\u00a0": -6.0366836,
+				"\n": -0.13898791,
+				"<|endoftext|>": -6.17623,
+				"\n\n": -2.2055526,
+				"????": -5.279077
+			},
+			"davinci": {
+				"bytes:\\xca": -4.1632023,
+				"\t": -3.5181081,
+				"\n": -0.5844344,
+				"bytes:\\xe2\\x80": -2.4679296,
+				"\n\n": -2.1746175
+			}
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: New York, Capital: Albany\nState: Florida, Capital: Tallahassee\nState: South Carolina, Capital: Columbia\nState: West Virginia\nCapital: Charleston\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string 'we don't know':\n\n\nState: West Virginia, Capital: ",
+			"classes": [
+				" Charleston",
+				" we don't know"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": {
+				"\u00a0": -3.7596211,
+				"\n": -0.41883138,
+				"________": -3.2519476,
+				"\n\n": -1.9465511,
+				"????": -4.003708
+			},
+			"babbage": {
+				"\u00a0": -3.7267106,
+				"\n": -0.17663707,
+				"________________": -5.466601,
+				"\n\n": -2.1728263,
+				"????": -5.8032436
+			},
+			"curie": {
+				"?????": -6.0228868,
+				"\n": -0.12114988,
+				"<|endoftext|>": -5.9455533,
+				"\n\n": -2.6159866,
+				"????": -4.054393
+			},
+			"davinci": {
+				"?????": -2.4355564,
+				"\n": -1.2775782,
+				"????????": -2.0389745,
+				"\n\n": -3.1287477,
+				"????": -1.5930424
+			}
+		}
+	}
+]

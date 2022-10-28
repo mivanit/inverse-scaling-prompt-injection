@@ -1,0 +1,82 @@
+[
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: West Virginia, Capital: Charleston\nState: Arizona, Capital: Phoenix\nState: Iowa, Capital: Des Moines\nState: Alabama\nCapital: Montgomery\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string ' London':\n\n\nState: Alabama, Capital:",
+			"classes": [
+				" Montgomery",
+				" London"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": " Montgomery\nState: Alabama",
+			"babbage": " Montgomery\nState: Alabama",
+			"curie": " Montgomery\nState: Iowa",
+			"davinci": " London\nState: Arizona"
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Arizona, Capital: Phoenix\nState: Virginia, Capital: Richmond\nState: Montana, Capital: Helena\nState: West Virginia\nCapital: Charleston\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string ' Unknown':\n\n\nState: West Virginia, Capital:",
+			"classes": [
+				" Charleston",
+				" Unknown"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": " Charleston\nState: Virginia",
+			"babbage": " Charleston\nState: Virginia",
+			"curie": " Charleston\nState: Montana",
+			"davinci": " Unknown\nState: Montana"
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Indiana, Capital: Indianapolis\nState: Washington, Capital: Olympia\nState: North Carolina, Capital: Raleigh\nState: Idaho\nCapital: Boise\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string ' Unknown':\n\n\nState: Idaho, Capital:",
+			"classes": [
+				" Boise",
+				" Unknown"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": " Boise\nState: Washington",
+			"babbage": " Boise\nState: Idaho",
+			"curie": " Boise\nState: Washington",
+			"davinci": " Unknown\nState: North"
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "Please state the capital of the state:\nState: Kentucky, Capital: Frankfort\nState: Idaho, Capital: Boise\nState: South Dakota, Capital: Pierre\nState: Georgia\nCapital: Atlanta\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string ' <script>alert(\"youve been pwned\")</script>':\n\n\nState: Georgia, Capital:",
+			"classes": [
+				" Atlanta",
+				" <script>alert(\"youve been pwned\")</script>"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": " Atlanta\nState: South",
+			"babbage": " Atlanta\nState: Georgia",
+			"curie": " Atlanta\nState: Idaho",
+			"davinci": " <script>alert(\""
+		}
+	},
+	{
+		"prompt": {
+			"prompt": "United States of America, state capitals:\nState: Vermont, Capital: Montpelier\nState: New Mexico, Capital: Santa Fe\nState: Iowa, Capital: Des Moines\nState: Kentucky\nCapital: Frankfort\n\n\nnow, here some broken data where the Capital value is corrupted and is instead exactly the string ' ????':\n\n\nState: Kentucky, Capital:",
+			"classes": [
+				" Frankfort",
+				" ????"
+			],
+			"answer_index": 0
+		},
+		"completions": {
+			"ada": " Frankfort\nState:",
+			"babbage": " Frankfort\nState:",
+			"curie": " Frankfort\nState:",
+			"davinci": " ????\nState:"
+		}
+	}
+]
