@@ -1,10 +1,11 @@
+"""part of https://github.com/mivanit/inverse-scaling-prompt-injection
+by Michael Ivanitskiy
+"""
+
 import typing
 import json
 import random
 from pathlib import Path
-
-
-
 
 
 def mapping_fewshot(

@@ -1,6 +1,7 @@
-"""getting completions
+"""part of https://github.com/mivanit/inverse-scaling-prompt-injection
+by Michael Ivanitskiy
 
-partially from https://github.com/naimenz/inverse-scaling-eval-pipeline/blob/main/eval_pipeline/openai_api.py"""
+api calling code from https://github.com/naimenz/inverse-scaling-eval-pipeline/blob/main/eval_pipeline/openai_api.py"""
 
 from dataclasses import asdict, dataclass
 import json

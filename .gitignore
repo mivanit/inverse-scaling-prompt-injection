@@ -1,5 +1,8 @@
 .openai_key
 
+**/**.pdlog
+**/**.synctex.gz
+
 # python
 # ====================
 # Byte-compiled / optimized / DLL files
