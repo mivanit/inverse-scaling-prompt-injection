@@ -79,7 +79,7 @@ The `ada` model often exhibited higher than expected loss, and did not always fo
 
 # Acknowledgements/Bibliography
 
-Thanks is extended to Kyle McDonell and Laria Reynolds for their mentorship, and to Alya Sharbaugh for help proofreading the actual submission.
+Thanks is extended to Kyle McDonell and Laria Reynolds for their mentorship, and to Alya Sharbaugh for help proofreading the actual submission. Also, to my PhD advisors Samy Wu Fung and Cecilia Diniz Behn.
 
 Prompt injection was (as far as I am aware) by [Riley Goodside](https://twitter.com/goodside/status/1569128808308957185). I found the work of [Simon Willison](https://simonwillison.net/2022/Sep/12/prompt-injection/) on the subject to also be very helpful.
 
